@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand h1" href="#">
                 <i class="fa-brands fa-instagram"></i>
                 Instagram
             </a>
@@ -27,7 +27,7 @@
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-fullscreen-sm-down">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Create a new post</h1>
@@ -36,14 +36,15 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label fw-semibold">Caption:</label>
-                                <textarea class="form-control text-secondary" id="message-text" placeholder="Add the caption of your post here"></textarea>
-                              </div>
-                              <button type="button" class="btn btn-light">
+                                <textarea class="form-control text-secondary" id="message-text"
+                                    placeholder="Add the caption of your post here"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-light">
                                 <i class="fa-solid fa-camera"></i>
-                              </button>
-                              <button type="button" class="btn btn-light">
+                            </button>
+                            <button type="button" class="btn btn-light">
                                 <i class="fa-solid fa-location-dot"></i>
-                              </button>
+                            </button>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -52,12 +53,12 @@
                     </div>
                 </div>
             </div>
-            <div class="dropdown-center">
-                <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown"
-                    aria-expanded="false">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -72,6 +73,98 @@
         </div>
         </div>
     </nav>
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                <i class="fa-solid fa-table-cells" style="color: #575757;"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                <i class="fa-solid fa-square" style="color: #393939;"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row ">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://www.birdlife.org/wp-content/uploads/2021/06/Toucan-Pranesh-Ravi-Unsplash-edited-scaled.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://www.thesprucepets.com/thmb/RLUYGzh-Q8OWZzO5MtAxSylQQWM=/4100x0/filters:no_upscale():strip_icc()/sun-conure-parrot-standing-at-branch-635717112-5b4d5ff1c9e77c003eac6f01.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://www.discoverthedaintree.com/wp-content/uploads/2022/06/3-scaled.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://www.lovethegarden.com/sites/default/files/content/articles/UK_wildbirds-01-robin.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlyZHxlbnwwfHwwfHx8MA%3D%3D">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://www.birds.cornell.edu/home/wp-content/uploads/2023/09/334289821-Baltimore_Oriole-Matthew_Plante.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://i.pinimg.com/736x/88/b9/c5/88b9c5500a5970bec1ab41cb7200d594.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100" src="https://i.ytimg.com/vi/RfXxh0Eff_w/maxresdefault.jpg">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="img-container">
+                        <img class="w-100"
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Anodorhynchus_hyacinthinus_-Disney_-Florida-8.jpg">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <container>
+            <div class="col-6">
+                <p>titulo</p>
+                <img class="object-fit-cover mw-100 mh-100"
+                    src="https://www.birdlife.org/wp-content/uploads/2021/06/Toucan-Pranesh-Ravi-Unsplash-edited-scaled.jpg">
+            </div>
+        </container>
+    </div>
+    </div>
+    </div>
 </body>
 
 </html>
